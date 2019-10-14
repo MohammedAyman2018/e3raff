@@ -1,0 +1,26 @@
+:root{
+    --mainColor: #9b2c2c;
+}
+
+nav .collapse{
+    transform: translateX(400px);
+}
+
+nav .collapse ul li a.active{
+    position: relative;
+    color: black;
+}
+
+nav .collapse ul li a.active::after{
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10px;
+    left: 0; 
+    border-radius: 5px;
+    background-color: var(--mainColor);
+    background-image: linear-gradient(to right, rgb(168, 66, 66) 0%, var(--mainColor) 100%);
+    opacity: 0.4;
+}

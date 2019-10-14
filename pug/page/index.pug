@@ -1,0 +1,18 @@
+doctype html
+html(dir="rtl" lang="ar")
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    link(href='./css/Tailwind.css' rel='stylesheet')
+    link(href='./css/main.css' rel='stylesheet')
+    link(href="https://fonts.googleapis.com/css?family=Almarai:300,400,700,800&display=swap" rel='stylesheet')
+
+    <script src="https://kit.fontawesome.com/7ccf14bcd9.js"></script>
+    title Document
+
+  body
+    include ../components/navbar
+    +navi([['الرئيسية','active'],['دورات تعليمية',''],['كمبيوتر وانترنت',''],['أندرويد',''],['الأقمار الصناعية',''],['علوم',''],['مقالات و معلومات',''],['المرأة',''],['أنظمة وقوانين','']])
+  script(src='./js/move.js')
+  script(src='./js/main.js')

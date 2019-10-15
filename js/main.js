@@ -16,7 +16,7 @@ collapseOpenBtn.onclick = (e) => {
 collapseCloseBtn.onclick = (e) => {
     e.target.style.display="none";
     move(collapseDiv)
-        .x(400)
+        .x(window.innerWidth)
         .set('opacity', 0)
         .duration('0.7s')
     .end();

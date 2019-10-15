@@ -1,26 +1,34 @@
-:root{
-    --mainColor: #9b2c2c;
+body {
+  padding-top: 48px;
 }
 
-nav .collapse{
-    transform: translateX(400px);
+nav .collapse {
+  transform: translateX(750px);
+}
+nav .collapse ul li a.active {
+  position: relative;
+  color: black;
+}
+nav .collapse ul li a.active::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  border-radius: 5px;
+  background-color: #9b2c2c;
+  background-image: linear-gradient(to right, #a1575793 0%, #9b2c2c 100%);
+  opacity: 0.4;
 }
 
-nav .collapse ul li a.active{
-    position: relative;
-    color: black;
+.banner {
+  background-image: url("../images/banner-img.png");
 }
 
-nav .collapse ul li a.active::after{
-    content: ' ';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 10px;
-    left: 0; 
-    border-radius: 5px;
-    background-color: var(--mainColor);
-    background-image: linear-gradient(to right, rgb(168, 66, 66) 0%, var(--mainColor) 100%);
-    opacity: 0.4;
+.sub-catigory {
+  transition: background 0.4s ease-in;
 }
+
+/*# sourceMappingURL=main.css.map */

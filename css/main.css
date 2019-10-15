@@ -31,4 +31,8 @@ nav .collapse ul li a.active::after {
   transition: background 0.4s ease-in;
 }
 
+.articles-pagenation a {
+  transition: all 0.4s ease;
+}
+
 /*# sourceMappingURL=main.css.map */

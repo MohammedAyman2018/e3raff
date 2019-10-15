@@ -1,5 +1,5 @@
 mixin navi(active)
-    nav.bg-white.fixed.top-0.shadow-xl.w-full.h-12.text-center.justify-center.flex.flex-wrap
+    nav.bg-white.fixed.top-0.shadow-xl.w-full.h-12.text-center.justify-center.flex.flex-wrap.z-50
         .container.justify-center.flex.flex-wrap(class="md:justify-start")
             button(class='w-3/12 m-auto bg-black text-white text-sm h-6 rounded-lg md:hidden outline-none' id="open") الأقسام
             .logo.flex(class="w-8/12 bg-white text-black font-bold text-2xl md:w-1/12 md:text-white md:text-xl md:shadow-inner md:bg-red-800")
@@ -10,7 +10,7 @@ mixin navi(active)
                         li.h-full.text-sm.cursor-pointer.inline-flex
                             a.inline-block.m-auto.mx-2.font-bold(href="#" class="md:mx-1 lg:mx-2" class=list[1])=list[0]
 
-            .collapse.top-0.right-0.h-full.fixed.pt-16.flex.flex-wrap.justify-center.items-center#collapse(class="md:hidden w-8/12 bg-white shadow-2xl")
+            .collapse.top-0.right-0.h-full.fixed.pt-16.flex.flex-wrap.justify-center.items-center#collapse(class="lg:hidden w-8/12 bg-white shadow-2xl")
                 button#close.absolute.top-0.p-3.font-bold.right-0.border.border-black x
                 ul
                     each list in active

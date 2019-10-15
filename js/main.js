@@ -21,3 +21,23 @@ collapseCloseBtn.onclick = (e) => {
         .duration('0.7s')
     .end();
 }
+
+// Change articles layout
+const   horizentalArticles = document.getElementById('horizontal-articles'),
+        verticalArticles = document.getElementById('vertical-articles'),
+        horizentalBtn = document.getElementById('horizontal'),
+        verticalBtn = document.getElementById('vertical');
+    
+horizentalBtn.onclick = (e) =>{
+    if(horizentalArticles.classList.contains('hidden')){
+        horizentalArticles.classList.toggle('hidden');
+        verticalArticles.classList.toggle('hidden');
+    }
+}
+
+verticalBtn.onclick = (e) =>{
+    if(verticalArticles.classList.contains('hidden')){
+        horizentalArticles.classList.toggle('hidden');
+        verticalArticles.classList.toggle('hidden');
+    }
+}

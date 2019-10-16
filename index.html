@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./css/Tailwind.css" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Almarai:300,400,700,800&amp;display=swap" rel="stylesheet"><script src="https://kit.fontawesome.com/7ccf14bcd9.js"></script>
+    <link href="./css/fonts.css" rel="stylesheet">
+    <script src="./js/font-awesome.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -52,8 +53,8 @@
       <div class="articles-top flex justify-between mt-5">
                 <h2 class="font-bold text-xl">أحدث المقالات: </h2>
         <div class="articles-top--layout mx-4"><span class="font-bold text-lg">طريقة العرض: </span>
-          <button class="inline-block text-lg mx-1" id="horizontal">p</button>
-          <button class="inline-block text-lg" id="vertical">l</button>
+          <button class="inline-block text-lg mx-1" id="horizontal"><i class="fas fa-th"></i></button>
+          <button class="inline-block text-lg" id="vertical"><i class="fas fa-bars"></i></button>
         </div>
       </div>
     </div>
@@ -61,248 +62,218 @@
       <div class="flex flex-wrap">
         <div class="articles-content flex flex-wrap mt-8 hidden" id="horizontal-articles">
           <div class="articles-content--articles flex flex-wrap overflow-hidden md:w-10/12 sm:-mx-2">
-            <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4 hover:shadow-lg px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
-              <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-              </div>
-              <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block block">إقرأ المزيد</button>
-              </div>
-            </div>
-            <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4 hover:shadow-lg px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
-              <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-              </div>
-              <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block block">إقرأ المزيد</button>
-              </div>
-            </div>
-            <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4 hover:shadow-lg px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
-              <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-              </div>
-              <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block block">إقرأ المزيد</button>
-              </div>
-            </div>
-            <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4 hover:shadow-lg px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
-              <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-              </div>
-              <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block block">إقرأ المزيد</button>
-              </div>
-            </div>
-            <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4 hover:shadow-lg px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
-              <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-              </div>
-              <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block block">إقرأ المزيد</button>
-              </div>
-            </div>
-            <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4 hover:shadow-lg px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
-              <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-              </div>
-              <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block block">إقرأ المزيد</button>
-              </div>
-            </div>
-            <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4 hover:shadow-lg px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
-              <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-              </div>
-              <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block block">إقرأ المزيد</button>
-              </div>
-            </div>
-            <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4 hover:shadow-lg px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
-              <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-              </div>
-              <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block block">إقرأ المزيد</button>
-              </div>
-            </div>
-            <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4 hover:shadow-lg px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
-              <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-              </div>
-              <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block block">إقرأ المزيد</button>
-              </div>
-            </div>
-            <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4 hover:shadow-lg px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
-              <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-              </div>
-              <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block block">إقرأ المزيد</button>
-              </div>
-            </div>
-            <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4 hover:shadow-lg px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
-              <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-              </div>
-              <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block block">إقرأ المزيد</button>
-              </div>
-            </div>
-            <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4 hover:shadow-lg px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
-              <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-              </div>
-              <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block block">إقرأ المزيد</button>
-              </div>
-            </div>
+                        <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4  px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
+                          <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                          </div>
+                          <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                        </div>
+                        <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4  px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
+                          <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                          </div>
+                          <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                        </div>
+                        <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4  px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
+                          <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                          </div>
+                          <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                        </div>
+                        <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4  px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
+                          <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                          </div>
+                          <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                        </div>
+                        <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4  px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
+                          <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                          </div>
+                          <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                        </div>
+                        <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4  px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
+                          <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                          </div>
+                          <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                        </div>
+                        <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4  px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
+                          <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                          </div>
+                          <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                        </div>
+                        <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4  px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
+                          <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                          </div>
+                          <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                        </div>
+                        <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4  px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
+                          <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                          </div>
+                          <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                        </div>
+                        <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4  px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
+                          <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                          </div>
+                          <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                        </div>
+                        <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4  px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
+                          <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                          </div>
+                          <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                        </div>
+                        <div class="rounded overflow-hidden md:w-4/12 sm:w-2/4 md:my-4  px-4 pb-2"><img class="w-full" src="https://placeimg.com/500/300/tech" style="height:161px" alt="Sunset in the mountains"><span class="bg-red-800 inline-block p-2 mr-8 -mt-24 text-white">كمبيوتر وانترنت</span>
+                          <div class="px-6 py-4"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                          </div>
+                          <div class="px-6 py-4"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1 md:px-1"><i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mx-4 sm:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                        </div>
           </div>
-          <div class="ad relative bg-gray-700 hidden md:block md:w-2/12">
-            <div class="bg-gray-700 h-full absolute"></div>
-          </div>
+                    <div class="ad relative bg-gray-700 hidden md:block md:w-2/12">
+                      <div class="bg-gray-700 h-full absolute"></div>
+                    </div>
         </div>
         <div class="articles-content flex flex-wrap mt-8" id="vertical-articles">
           <div class="articles-content--articles flex flex-wrap overflow-hidden md:w-10/12 md:w-10/12 sm:-mx-2">
-            <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
-              <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
-              <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-                <div class="py-4 md:justify-between md:flex">
-                  <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                    <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block block">إقرأ المزيد</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
-              <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
-              <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-                <div class="py-4 md:justify-between md:flex">
-                  <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                    <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block block">إقرأ المزيد</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
-              <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
-              <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-                <div class="py-4 md:justify-between md:flex">
-                  <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                    <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block block">إقرأ المزيد</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
-              <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
-              <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-                <div class="py-4 md:justify-between md:flex">
-                  <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                    <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block block">إقرأ المزيد</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
-              <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
-              <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-                <div class="py-4 md:justify-between md:flex">
-                  <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                    <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block block">إقرأ المزيد</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
-              <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
-              <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-                <div class="py-4 md:justify-between md:flex">
-                  <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                    <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block block">إقرأ المزيد</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
-              <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
-              <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-                <div class="py-4 md:justify-between md:flex">
-                  <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                    <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block block">إقرأ المزيد</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
-              <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
-              <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-                <div class="py-4 md:justify-between md:flex">
-                  <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                    <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block block">إقرأ المزيد</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
-              <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
-              <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-                <div class="py-4 md:justify-between md:flex">
-                  <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                    <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block block">إقرأ المزيد</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
-              <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
-              <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-                <div class="py-4 md:justify-between md:flex">
-                  <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                    <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block block">إقرأ المزيد</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
-              <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
-              <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-                <div class="py-4 md:justify-between md:flex">
-                  <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                    <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block block">إقرأ المزيد</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
-              <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
-              <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
-                <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
-                <div class="py-4 md:justify-between md:flex">
-                  <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a>
-                    <button class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block block">إقرأ المزيد</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+                        <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
+                          <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
+                          <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                            <div class="py-4 md:justify-between md:flex">
+                              <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
+                          <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
+                          <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                            <div class="py-4 md:justify-between md:flex">
+                              <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
+                          <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
+                          <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                            <div class="py-4 md:justify-between md:flex">
+                              <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
+                          <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
+                          <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                            <div class="py-4 md:justify-between md:flex">
+                              <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
+                          <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
+                          <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                            <div class="py-4 md:justify-between md:flex">
+                              <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
+                          <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
+                          <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                            <div class="py-4 md:justify-between md:flex">
+                              <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
+                          <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
+                          <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                            <div class="py-4 md:justify-between md:flex">
+                              <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
+                          <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
+                          <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                            <div class="py-4 md:justify-between md:flex">
+                              <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
+                          <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
+                          <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                            <div class="py-4 md:justify-between md:flex">
+                              <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
+                          <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
+                          <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                            <div class="py-4 md:justify-between md:flex">
+                              <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
+                          <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
+                          <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                            <div class="py-4 md:justify-between md:flex">
+                              <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="border flex flex-wrap my-2 mx-auto w-full md:w-11/12">
+                          <div class="img w-full h-64 sm:h-auto md:w-4/12  sm:block sm:w-1/3" style="background-image: url(./images/tech.jfif); background-size: cover"> </div>
+                          <div class="text p-2 w-full sm:w-2/3 md:w-8/12"><a class="font-bold text-xl mb-2 cursor-pointer" href="#">برنامج جلب التعريفات Driver Easy</a>
+                            <p class="text-gray-700 text-base mt-4">مستخدمي الكمبيوتر العاديين مكبرات الصوت لا تعمل؟ الطابعة سوء التصرف؟ رؤية كل شيء كبير ومشوهة على الشاشة؟</p>
+                            <div class="py-4 md:justify-between md:flex">
+                              <div class="info w-full sm:w-auto"><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"> <i class="far fa-clock ml-1"> </i><span>25 / 10 / 2019</span></span><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1"><i class="far fa-eye ml-1"></i><span>10</span></span><a class="inline-block my-1 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer sub-catigory sm:my-0 hover:bg-red-800 hover:text-white" href="#">هاردوير</a><a class="mt-2 bg-green-600 py-1 px-3 rounded-full text-white mr-1 md:inline-block inline-block cursor-pointer hover:bg-green-700" href="#">إقرأ المزيد</a></div>
+                            </div>
+                          </div>
+                        </div>
           </div>
-          <div class="ad relative bg-gray-700 hidden md:block md:w-2/12">
-            <div class="bg-gray-700 h-full absolute"></div>
-          </div>
+                    <div class="ad relative bg-gray-700 hidden md:block md:w-2/12">
+                      <div class="bg-gray-700 h-full absolute"></div>
+                    </div>
         </div>
       </div>
             <div class="articles-pagenation flex justify-center"><a class=" text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 hover:bg-red-800 cursor-pointer hover:text-white" href="#">السابق</a><a class=" text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 hover:bg-red-800 cursor-pointer hover:text-white" href="#">1</a><a class=" text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 hover:bg-red-800 cursor-pointer hover:text-white" href="#">2</a><a class=" text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 hover:bg-red-800 cursor-pointer hover:text-white" href="#">3</a><a class=" text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 hover:bg-red-800 cursor-pointer hover:text-white" href="#">التالي</a></div>
+    </div>
+    <div class="container mx-auto spicial_sec">
+            <h2 class="font-bold text-xl">أقسام مميزة: </h2>
+      <div class="px-2 mt-4">
+        <div class="flex flex-wrap -mx-2"><a class="px-2 mt-2 w-full sm:w-1/2 md:w-1/4" data-show="1">
+            <div class="bg-gray-400 cursor-pointer flex justify-center font-bold items-center py-2 shadow-lg bg-gray-400 text-lg border px-2 text-center hover:bg-red-800 hover: hover:text-white">
+              <p>مقالات ومعلومات</p>
+            </div></a><a class="px-2 mt-2 w-full sm:w-1/2 md:w-1/4" data-show="2">
+            <div class="bg-gray-400 cursor-pointer flex justify-center font-bold items-center py-2 shadow-lg bg-gray-400 text-lg border px-2 text-center hover:bg-red-800 hover: hover:text-white">
+              <p>دورات تعليمية</p>
+            </div></a><a class="px-2 mt-2 w-full sm:w-1/2 md:w-1/4" data-show="3">
+            <div class="bg-gray-400 cursor-pointer flex justify-center font-bold items-center py-2 shadow-lg bg-gray-400 text-lg border px-2 text-center hover:bg-red-800 hover: hover:text-white">
+              <p>أنظمة وقوانين</p>
+            </div></a><a class="px-2 mt-2 w-full sm:w-1/2 md:w-1/4" data-show="4">
+            <div class="bg-gray-400 cursor-pointer flex justify-center font-bold items-center py-2 shadow-lg bg-gray-400 text-lg border px-2 text-center hover:bg-red-800 hover: hover:text-white">
+              <p>أندرويد</p>
+            </div></a></div>
+      </div>
     </div>
   </body>
   <script src="./js/move.js"></script>

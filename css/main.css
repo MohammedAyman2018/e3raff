@@ -2,6 +2,14 @@ body {
   padding-top: 48px;
 }
 
+nav .drop-down {
+  min-width: 200px !important;
+  margin-top: 49px !important;
+}
+nav .drop-down[data-number="7"] {
+  right: auto;
+  left: 0;
+}
 nav .collapse {
   transform: translateX(750px);
 }

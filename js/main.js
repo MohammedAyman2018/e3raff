@@ -22,6 +22,23 @@ collapseCloseBtn.onclick = (e) => {
     .end();
 }
 
+// navbar dropdowns
+const   list_collapse = document.querySelectorAll('[data-show]'),
+        dropDowns = document.querySelectorAll('[data-number]'),
+        // Convert dropDowns to an Array 
+        dropArray = Array.prototype.slice.call(dropDowns);
+
+list_collapse.forEach(list => {
+    list.onclick= () => {
+        let listAttr = list.getAttribute('data-show'),
+            target_drop = dropArray.filter( drop => drop.getAttribute("data-number") == listAttr)[0],
+            else_drop = dropArray.filter( drop => drop.getAttribute("data-number") !== listAttr);
+        
+        target_drop.classList.toggle('hidden');
+        else_drop.forEach(list => list.classList.add('hidden'));
+    }
+})
+
 // Change articles layout
 const   horizentalArticles = document.getElementById('horizontal-articles'),
         verticalArticles = document.getElementById('vertical-articles'),

@@ -2,8 +2,16 @@ $mainColor:#9b2c2c
     
 body
     padding-top: 48px
-
-nav .collapse
+  
+nav
+  .drop-down
+    min-width: 200px !important
+    margin-top: 49px !important
+    &[data-number = '7']
+      right: auto
+      left: 0
+      
+  .collapse
     transform: translateX(750px)
     ul li a.active
         position: relative

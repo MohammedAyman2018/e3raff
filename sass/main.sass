@@ -13,7 +13,12 @@ nav
       
   .collapse
     transform: translateX(750px)
-    ul li a.active
+    ul li
+      .drop-down[data-number = '13'], .drop-down[data-number = '14'], .drop-down[data-number = '15']
+        bottom: 0
+        margin-top: 0 !important
+        margin-bottom: 48px !important
+      a.active
         position: relative
         color: black
 

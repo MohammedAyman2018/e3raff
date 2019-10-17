@@ -1,4 +1,4 @@
-mixin navi(main ,active)
+mixin navi(main, active)
     nav.bg-white.fixed.top-0.shadow-xl.w-full.h-12.text-center.justify-center.flex.flex-wrap.z-50.left-0
         .container.justify-center.flex.flex-wrap(class="md:justify-start")
             button(class='w-3/12 m-auto bg-black text-white text-sm h-6 rounded-lg md:hidden outline-none' id="open") الأقسام
@@ -7,10 +7,10 @@ mixin navi(main ,active)
             .links(class="hidden md:block md:w-11/12")
                 ul.h-full
                     li.h-full.text-sm.cursor-pointer.inline-flex.relative
-                        a.inline-block.m-auto.mx-2.font-bold(href="#" class="md:mx-1 md:text-xs lg:mx-2" class='active') الرئيسية
+                        button.outline-none.inline-block.m-auto.mx-2.font-bold(href="#" class="focus:outline-none md:mx-1 md:text-xs lg:mx-2" class='active') الرئيسية
                     each list,index in active
                         li.h-full.text-sm.cursor-pointer.inline-flex.relative(data-show=index)
-                            a.inline-block.m-auto.mx-2.font-bold(href="#" class="md:mx-1 md:text-xs lg:mx-2" class=list[1])=list[0]
+                            button.outline-none.inline-block.m-auto.mx-2.font-bold(href="#" class="focus:outline-none md:mx-1 md:text-xs lg:mx-2" class=list[1])=list[0]
                                 i.fas.fa-caret-down.mx-1(class="md:mx-0")
                             .drop-down.bg-white.w-full.shadow-md.absolute.top-auto.right-0.hidden(data-number=index)
                                 a.block.text-center.font-bold.border.border-b.p-2(class="hover:bg-red-800 hover:text-white" href="#") قائمة منسدلة
@@ -22,9 +22,13 @@ mixin navi(main ,active)
                 button#close.absolute.top-0.p-3.font-bold.right-0.border.border-black x
                 ul
                     li.p-2.text-xl.cursor-pointer
-                            a(href="#" class='active') الرئيسية
-                    each list in active
-                        li.p-2.text-xl.cursor-pointer
-                            a(href="#" class=list[1])=list[0]
+                            button(href="#" class='active focus:outline-none') الرئيسية
+                    each list,index in active
+                        li.p-2.text-xl.cursor-pointer.relative(data-show=index+8)
+                            button(href="#" class="focus:outline-none" class=list[1])=list[0]
                                 i.fas.fa-caret-down.mx-1
-                        
+                            .drop-down.bg-white.w-full.shadow-md.absolute.z-50.hidden(data-number=index+8)
+                                a.block.text-center.font-bold.border.border-b.p-2(class="hover:bg-red-800 hover:text-white" href="#") قائمة منسدلة
+                                a.block.text-center.font-bold.border.border-b.p-2(class="hover:bg-red-800 hover:text-white" href="#") قائمة منسدلة
+                                a.block.text-center.font-bold.border.border-b.p-2(class="hover:bg-red-800 hover:text-white" href="#") قائمة منسدلة
+                                a.block.text-center.font-bold.p-2(class="hover:bg-red-800 hover:text-white" href="#") قائمة منسدلة

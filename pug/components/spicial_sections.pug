@@ -1,19 +1,20 @@
 .container.mx-auto.spicial_sec
     include ../utils/ad
-    +AD(['ad relative bg-gray-700 h-56 hidden md:block w-full my-8','absolute'])
+    +AD(['ad relative bg-gray-700 h-56 w-full my-8','absolute'])
     include ../utils/header
     +header("font-bold text-xl",'أقسام مميزة: ')
-    .px-2.mt-4
+    .px-2.my-4
         .flex.flex-wrap.-mx-2
-            a.px-2.mt-2(class='w-full sm:w-1/2 md:w-1/4' data-show="1")
+            a.px-2.mt-2(class='w-full sm:w-1/2 md:w-1/4' data-carousel-show="1")
                 .bg-gray-400.cursor-pointer.flex.justify-center.font-bold.items-center.py-2.shadow-lg.bg-gray-400.text-lg.border.px-2.text-center(class="hover:bg-red-800 hover: hover:text-white")
                     p مقالات ومعلومات
-            a.px-2.mt-2(class='w-full sm:w-1/2 md:w-1/4' data-show="2")
+            a.px-2.mt-2(class='w-full sm:w-1/2 md:w-1/4' data-carousel-show="2")
                 .bg-gray-400.cursor-pointer.flex.justify-center.font-bold.items-center.py-2.shadow-lg.bg-gray-400.text-lg.border.px-2.text-center(class="hover:bg-red-800 hover: hover:text-white")
                     p دورات تعليمية
-            a.px-2.mt-2(class='w-full sm:w-1/2 md:w-1/4' data-show="3")
+            a.px-2.mt-2(class='w-full sm:w-1/2 md:w-1/4' data-carousel-show="3")
                 .bg-gray-400.cursor-pointer.flex.justify-center.font-bold.items-center.py-2.shadow-lg.bg-gray-400.text-lg.border.px-2.text-center(class="hover:bg-red-800 hover: hover:text-white")
                     p أنظمة وقوانين
-            a.px-2.mt-2(class='w-full sm:w-1/2 md:w-1/4' data-show="4")
+            a.px-2.mt-2(class='w-full sm:w-1/2 md:w-1/4' data-carousel-show="4")
                 .bg-gray-400.cursor-pointer.flex.justify-center.font-bold.items-center.py-2.shadow-lg.bg-gray-400.text-lg.border.px-2.text-center(class="hover:bg-red-800 hover: hover:text-white")
                     p أندرويد
+    include ./carousel

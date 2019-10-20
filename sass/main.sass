@@ -46,3 +46,20 @@ nav
 
 .articles-pagenation a
   transition: all 0.4s ease
+
+.controls
+  top: auto
+  bottom: -10px
+  left: 50%
+  opacity: 0.8
+  transition: all 0.4s ease
+  transform: translate(10%, 100%)
+  &:last-child
+    transform: translate(-100%, 100%)
+
+.siema .image
+  img
+      background-color: darken(#333, 30%)
+  .overlay
+      display: grid
+      grid-row-gap: 15px

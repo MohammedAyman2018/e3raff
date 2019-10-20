@@ -1,0 +1,21 @@
+.container.mx-auto.relative.carousel
+    -for (let r = 1; r < 5; r++){
+        .siema(data-carousel-show=r )
+            - for (let i = 1; i < 15; i++){
+                .image.relative 
+                    img(src="https://placeimg.com/640/600/any="+(i+r))
+                    .overlay.absolute.top-0.w-full.h-full.p-2.left-0.bg-black-800.bg-transparent
+                        .top.items-end.flex
+                            a.text-white.font-bold.bg-red-800(class="hover:text-black cursor-pointer" href="#") الأندريد العظيم
+                        .bottom
+                            p.text-white.text-sm مقال رائع يحتوي على العديد من المعلومات <br> الشيقة حول الأندرويد
+                            span.text-sm.font-semibold.text-gray-200.my-2(class="md:px-1")
+                                i.far.fa-clock.ml-1 
+                                span 25 / 10 / 2019
+        
+            -}
+        button.next.absolute.bg-gray-300.h-8.w-8.rounded-full.controls(data-carousel-show-btn=r class="md:h-12 md:w-12 hover:bg-gray-400 focus:bg-gray-400 focus:outline-none")
+            i.fas.fa-arrow-right
+        button.prev.absolute.bg-gray-300.h-8.w-8.rounded-full.controls(data-carousel-show-btn=r class="md:h-12 md:w-12 hover:bg-gray-400 focus:bg-gray-400 focus:outline-none")
+            i.fas.fa-arrow-left
+    -}
